@@ -1,0 +1,60 @@
+
+.parallax-container {
+    height: 100vh; /* Set the height to the full viewport height */
+    overflow: hidden; /* Hide overflow to prevent images from going out of the page flow */
+    position: relative;
+  }
+  img{
+    object-fit: cover;
+  }
+  .Content {
+    height: 100vh; /* Set the height to the full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .text-content {
+    color: #fff; /* Add any additional styles for text content */
+  }
+  
+.Content {
+    position: relative;
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    background-size: cover; /* Cover the entire container with the background image */
+    background-position: center; /* Center the background image within the container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .text-content {
+    max-width: 600px; /* Set a maximum width for the text content */
+    margin: 0 auto; /* Center the text content within the container */
+  }
+  
+.text-content{
+    position: absolute;
+    top:50%;
+    left:50%;
+    padding: 15px 15px;
+    transform: translate(-50%,-50%);
+    background-color: gray;
+    color: white;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .Content {
+      height: 70vh; /* Adjust the height for smaller screens */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .Content {
+      height: 50vh; /* Further adjust the height for even smaller screens */
+    }
+  }
